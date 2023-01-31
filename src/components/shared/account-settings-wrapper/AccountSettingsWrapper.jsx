@@ -24,44 +24,10 @@ const AccountSettingsWrapper = (props) => {
         left: "1px",
         top: "0px",
         display: "flex",
-
-        height: "1343px",
-        width: "879px",
+        maxWidth: "879px",
         padding: "48px",
-
-        backgroundSize: "cover",
       }}
     >
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "flex-start",
-          padding: "0px",
-          gap: "8px",
-
-          position: "absolute",
-          width: "350px",
-          height: "50px",
-          left: "47px",
-          top: "25px",
-        }}
-      >
-        <SearchBar />
-
-        <Box
-          sx={{
-            position: "absolute",
-            left: "760px",
-            right: "10.43%",
-            top: "4.17%",
-            bottom: "6.25%",
-          }}
-        >
-          <SvgNotification />
-        </Box>
-      </Box>
-
       <Box
         sx={{
           display: "flex",

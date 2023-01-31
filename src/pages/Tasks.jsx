@@ -32,10 +32,6 @@ const Tasks = () => {
 
   return (
     <PageLayout>
-      <p>
-        Search bar , taburi + taskviewer + right bar cu calder pick si numele
-        tau si mail
-      </p>
       <Box
         sx={{
           display: "flex",

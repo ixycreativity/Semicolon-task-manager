@@ -5,6 +5,8 @@ import SideBar from "../side-bar/SideBar";
 import SidebarRight from "../side-bar-right/SidebarRight";
 import { useSelector, useDispatch } from "react-redux";
 import { getLoggedUserAction } from "../../../store/app/app.slice";
+import SearchBar from "../searchBar";
+import SvgNotification from "../../../assets/icons/icon/stroke/Notification";
 
 const StyledBox = styled(Box)(({ theme }) => ({
   "&": {
@@ -39,7 +41,17 @@ const PageLayout = (props) => {
         <SideBar />
 
         <Box className="page-main-col">
-          <Box>Search bar</Box>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              marginRight: "20px",
+            }}
+          >
+            <SearchBar />
+            <SvgNotification />
+          </Box>
           {props.children}
           {/* <AccountSettingsWrapper /> */}
         </Box>
