@@ -18,9 +18,11 @@ import activeBackground from "../../../assets/images/selected-list-item.png";
 import SvgOverview from "../../../assets/icons/icon/stroke/Overview";
 import SvgTasks from "../../../assets/icons/icon/stroke/Tasks";
 import SvgSettings from "../../../assets/icons/icon/stroke/Settings";
+import SvgUsers from "../../../assets/icons/icon/stroke/Users";
 import SvgOverviewFilled from "../../../assets/icons/icon/filled/Overview";
 import SvgTasksFilled from "../../../assets/icons/icon/filled/Tasks";
 import SvgSettingsFilled from "../../../assets/icons/icon/filled/Settings";
+import SvgUsersFilled from "../../../assets/icons/icon/filled/Users";
 import { useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { tooggleSidebar } from "../../../store/app/app.slice";
@@ -292,6 +294,28 @@ const SideBar = () => {
                   className="sidebar-list-item-text"
                 >
                   Settings
+                </Link>
+              </ListItem>
+              <ListItem
+                className={
+                  splitLocation[1] === "users"
+                    ? "sidebar-list-item active"
+                    : "sidebar-list-item"
+                }
+              >
+                <ListItemIcon className="sidebar-list-item-icon">
+                  {splitLocation[1] === "users" ? (
+                    <SvgUsersFilled />
+                  ) : (
+                    <SvgUsers />
+                  )}
+                </ListItemIcon>
+                <Link
+                  underline="hover"
+                  href="../users"
+                  className="sidebar-list-item-text"
+                >
+                  Users
                 </Link>
               </ListItem>
             </List>
