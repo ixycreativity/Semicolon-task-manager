@@ -1,0 +1,32 @@
+.ag-theme-alpine {
+  --ag-header-height: 30px;
+  --ag-header-foreground-color: black;
+  --ag-header-background-color: white;
+  --ag-header-cell-hover-background-color: #f6f8fd;
+  --ag-header-cell-moving-background-color: rgb(80, 40, 140);
+  --ag-row-hover-color: #f6f8fd;
+  --ag-font-family: Gelion;
+  --ag-borders: none;
+}
+
+.ag-header-cell-text {
+  font-size: 16px !important;
+}
+
+.ag-cell {
+  display: flex;
+  align-items: center;
+  max-width: 200px;
+}
+
+div.ag-theme-alpine div.ag-row {
+  color: #808080;
+  font-weight: 400 !important;
+}
+
+.ag-root {
+  display: flex;
+  justify-content: center;
+  border: none;
+  padding: 40px;
+}
